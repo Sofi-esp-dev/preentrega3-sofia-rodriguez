@@ -1,0 +1,297 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4f7;
+    color: #4a2c3a;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffb3d9;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #4a2c3a;
+}
+
+/* Hero section */
+.hero {
+    background-color: #ffd6eb;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #4a2c3a;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #6d4c5b;
+}
+
+/* Menú */
+.menu {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu-item {
+    background-color: #ffb3d9;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    color: #4a2c3a;
+}
+
+.menu-item p {
+    color: #6d4c5b;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb3d9;
+    padding: 10px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Importación de Bootstrap */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4f7;
+    color: #4a2c3a;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffb3d9;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4a2c3a !important;
+}
+
+/* Hero section */
+.hero {
+    background-color: #ffd6eb;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #4a2c3a;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #6d4c5b;
+}
+
+/* Menú */
+.menu {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu-item {
+    background-color: #ffb3d9;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    color: #4a2c3a;
+}
+
+.menu-item p {
+    color: #6d4c5b;
+}
+
+footer {
+    background-color: #ffb3d9;
+    padding: 10px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Asegurar que Bootstrap no modifique botones personalizados */
+.btn {
+    all: unset;
+}
+
+/* Ajuste de tamaño y orden de botones en dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .menu-item {
+        max-width: 140px;
+        padding: 8px;
+    }
+
+    .menu-item h3 {
+        font-size: 14px;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+    }
+
+    .menu-item.sobre-nosotros {
+        grid-column: span 2;
+    }
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    .hero {
+        padding: 30px 15px;
+    }
+    .hero h2 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 300px;
+        margin: auto;
+    }
+    .menu-item {
+        max-width: 140px;
+        padding: 8px;
+    }
+    .menu-item h3 {
+        font-size: 14px;
+    }
+    .menu-item p {
+        font-size: 12px;
+    }
+    /* Asegurar "Sobre Nosotros" ocupe toda la fila */
+    .menu-item.sobre-nosotros {
+        grid-column: span 2;
+    }
+    footer {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.menu-item img {
+    transition: transform 0.3s ease-in-out;
+}
